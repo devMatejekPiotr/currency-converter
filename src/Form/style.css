@@ -1,0 +1,10 @@
+.form {
+  text-align: center;
+}
+
+.form__spacer {
+  background: rgba(255, 255, 255, 0.55);
+  height: 2px;
+  margin: 10px auto 12px;
+  width: 80%;
+}
