@@ -1,15 +1,22 @@
-# ToDo Task List 📋✏️
+# Currency Converter 🌍💱
+
 <p>
-   <img src='./public/images/demoTodoList.png' alt='todo task list Demo' width='500'/>
+   <img src='./src/images/Animation_Currency_Converter.gif' alt='Currency Converter Demo' width='600'/>
 </p>
+     
 ## Description
-My to-do list app allows users to effortlessly add new tasks, mark them as completed, and remove individual items. It's a simple yet powerful tool to help you stay organized and on top of your daily goals.
+Currency Converter is a simple and user-friendly tool that allows users to convert values from one currency to another. Users can select the initial and target currencies from a dropdown menu and enter the amount they wish to convert. The app immediately returns the conversion result upon clicking the "Convert" button.
 
 ## Technologies
 - **HTML5**
 - **CSS3**
 - **JavaScript**
 - **React**
+
+## Features
+- Selectable currencies for conversion (PL, EUR, USD, CNY)
+- Ability to enter any value for conversion
+- SEO and accessibility optimized with appropriate `meta` tags
 
 # Getting Started with Create React App
 
