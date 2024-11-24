@@ -1,17 +1,19 @@
 # Currency Converter 🌍💱
 
 <p>
-   <img src='./src/images/Animation_Currency_Converter.gif' alt='Currency Converter Demo' width='600'/>
+   <img src='./src/images/currency_converter.png' alt='Currency Converter' width='600'/>
 </p>
      
 ## Description
 Currency Converter is a simple and user-friendly tool that allows users to convert values from one currency to another. Users can select the initial and target currencies from a dropdown menu and enter the amount they wish to convert. The app immediately returns the conversion result upon clicking the "Convert" button.
 
 ## Technologies
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **React**
+<div style="display: flex; gap: 10px;">
+   <div style="background-color: #f7df1e; color: #000; padding: 7px; border-radius: 5px; font-weight: bold;">HTML5</div>
+   <div style="background-color: #264de4; color: #fff; padding: 7px; border-radius: 5px; font-weight: bold;">CSS3</div>
+   <div style="background-color: #f0db4f; color: #000; padding: 7px; border-radius: 5px; font-weight: bold;">JavaScript</div>
+   <div style="background-color: #61dafb; color: #000; padding: 7px; border-radius: 5px; font-weight: bold;">React</div>
+</div>
 
 ## Features
 - Selectable currencies for conversion (PL, EUR, USD, CNY)
