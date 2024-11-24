@@ -3,5 +3,6 @@ import { formatDate } from "../utils/formatDate";
 
 export const Clock = ({ date }) => {
   const formattedDate = formatDate(date);
-  return <p className="clock">{formattedDate}</p>;
+  const { dayOfWeek, day, month, time } = formattedDate;
+  return <p className="clock">{`${dayOfWeek}, ${day} ${month}, ${time}`}</p>;
 };
