@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "../Button/Button";
 import { ConvertValue } from "../ConvertValue/ConverValue";
 import { InputValue } from "../InputValue/InputValue";
 import { RenderValue } from "../RenderValue";
@@ -45,7 +44,9 @@ export const Form = () => {
         <InputValue value={selectedValue.value} onInputValue={handleChange} />
         <div className="form__spacer" aria-hidden="true"></div>
         <RenderValue error={error} resultValue={result} />
-        <Button text="Convert" />
+        <button className="form__button" type="submit">
+          Convert
+        </button>
       </form>
     </>
   );

@@ -1,5 +1,5 @@
 import { Container } from "./Container";
-import { Form } from "./Form/Form";
+import { Form } from "./Form/index";
 
 function App() {
   return (
