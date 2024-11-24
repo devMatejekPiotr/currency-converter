@@ -26,28 +26,26 @@ export const Form = () => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit} className="form">
-        <ConvertValue
-          onSelectValue={handleChange}
-          nameDirection="fromCurrency"
-          value={selectedValue.fromCurrency}
-          title="Convert from:"
-        />
-        <ConvertValue
-          onSelectValue={handleChange}
-          nameDirection="toCurrency"
-          value={selectedValue.toCurrency}
-          title="Convert to:"
-        />
-        <div className="form__spacer" aria-hidden="true"></div>
-        <InputValue value={selectedValue.value} onInputValue={handleChange} />
-        <div className="form__spacer" aria-hidden="true"></div>
-        <RenderValue error={error} resultValue={result} />
-        <button className="form__button" type="submit">
-          Convert
-        </button>
-      </form>
-    </>
+    <form onSubmit={handleSubmit} className="form">
+      <ConvertValue
+        onSelectValue={handleChange}
+        nameDirection="fromCurrency"
+        value={selectedValue.fromCurrency}
+        title="Convert from:"
+      />
+      <ConvertValue
+        onSelectValue={handleChange}
+        nameDirection="toCurrency"
+        value={selectedValue.toCurrency}
+        title="Convert to:"
+      />
+      <div className="form__spacer" aria-hidden="true"></div>
+      <InputValue value={selectedValue.value} onInputValue={handleChange} />
+      <div className="form__spacer" aria-hidden="true"></div>
+      <RenderValue error={error} resultValue={result} />
+      <button className="form__button" type="submit">
+        Convert
+      </button>
+    </form>
   );
 };
