@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { ConvertValue } from "../ConvertValue/ConverValue";
+import { ConvertValue } from "../ConvertValue/ConvertValue";
 import { InputValue } from "../InputValue/InputValue";
 import { RenderValue } from "../RenderValue";
 import "./style.css";
-import { countCurrencyValue, initValue } from "../utils/mockCurrency";
+import { countCurrencyValue } from "../utils/countCaurencyValue";
+import { initValue } from "../utils/mockInitValue";
 import { rates } from "../exampleRates";
 
 export const Form = () => {

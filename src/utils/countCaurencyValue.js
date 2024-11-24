@@ -1,9 +1,3 @@
-export const initValue = {
-  fromCurrency: "PL",
-  toCurrency: "PL",
-  value: "",
-};
-
 export const countCurrencyValue = (rates, choosenValue) => {
   const { fromCurrency, toCurrency, value } = choosenValue;
   const numberFloatValue = parseFloat(value);
