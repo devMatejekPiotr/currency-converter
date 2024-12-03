@@ -8,9 +8,9 @@ export const StyledContainer = styled.fieldset`
     rgba(0, 0, 0, 0.6),
     rgba(70, 70, 70, 0.7)
   );
-  max-height: 500px;
+  max-height: 600px;
   width: 70vw;
-  max-width: 300px;
+  max-width: 450px;
   border-radius: 15px;
   margin-top: 30px;
 `;
