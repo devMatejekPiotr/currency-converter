@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/currency-converter/static/js/main.b18916af.js",
+    "main.js": "/currency-converter/static/js/main.d6684a70.js",
     "static/media/DALLE2_1.webp": "/currency-converter/static/media/DALLE2_1.1a67e57c030031bda9b5.webp",
     "index.html": "/currency-converter/index.html",
-    "main.b18916af.js.map": "/currency-converter/static/js/main.b18916af.js.map"
+    "main.d6684a70.js.map": "/currency-converter/static/js/main.d6684a70.js.map"
   },
   "entrypoints": [
-    "static/js/main.b18916af.js"
+    "static/js/main.d6684a70.js"
   ]
 }
