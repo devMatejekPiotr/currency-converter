@@ -1,4 +1,4 @@
 export const initValue = {
-  toCurrency: "PL",
+  toCurrency: "AMD",
   value: "",
 };

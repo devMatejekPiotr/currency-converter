@@ -4,14 +4,19 @@ export const StyledForm = styled.form`
   text-align: center;
 `;
 
-export const FormSpacer = styled.div`
+export const Spacer = styled.div`
   background: rgba(255, 255, 255, 0.55);
   height: 2px;
-  margin: 10px auto 12px;
-  width: 80%;
+  margin: 0 auto;
+  width: 90%;
 `;
 
-export const FormButton = styled.button`
+export const Error = styled.p`
+  color: white;
+  text-align: center;
+`;
+
+export const Button = styled.button`
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -26,6 +31,8 @@ export const FormButton = styled.button`
   color: ${({ theme }) => theme.colors.text};
   padding: 10px 16px;
   font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   transition: box-shadow 0.3s, outline 0.3s;
 
   &:after {

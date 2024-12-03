@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-export const InputContainer = styled.div`
+export const Container = styled.div`
   position: relative;
-  margin-bottom: 12px;
 `;
 
 export const Input = styled.input`
@@ -13,8 +12,8 @@ export const Input = styled.input`
   margin: 20px 0;
   background: linear-gradient(
     to left,
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.35)
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.15)
   );
   border-radius: 18px;
   box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);

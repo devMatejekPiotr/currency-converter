@@ -4,7 +4,9 @@ export const countCurrencyValue = (rates, choosenValue) => {
   const resultOfValidation = validateCurrency(value);
 
   if (!resultOfValidation) {
-    const result = (numberFloatValue / rates[toCurrency]).toFixed(2);
+    const result = Number(
+      (numberFloatValue / rates[toCurrency].value).toFixed(3)
+    );
     return result;
   }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LabelSelect = styled.label`
+export const Label = styled.label`
   color: ${({ theme }) => theme.colors.text};
   font-weight: bold;
 `;
@@ -15,4 +15,6 @@ export const Select = styled.select`
   display: block;
   width: 100%;
   text-align: center;
+  max-height: 50px;
+  overflow-y: auto;
 `;

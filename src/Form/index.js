@@ -1,43 +1,44 @@
-import { useState } from "react";
-import { ConvertValue } from "../ConvertValue/ConvertValue";
-import { InputValue } from "../InputValue/InputValue";
-import { RenderValue } from "../RenderValue";
-import { countCurrencyValue } from "../utils/countCaurencyValue";
-import { initValue } from "../utils/mockInitValue";
-import { rates } from "../exampleRates";
-import { FormButton, FormSpacer, StyledForm } from "./Styled";
+import { ConvertValue } from "../ConvertValue/index";
+import { InputValue } from "../InputValue/index";
+import { RenderValue } from "../RenderValue/index";
+import { Clock } from "../Clock/index";
+import { useFormLogic } from "../hook/useFormLogic";
+import { Button, Spacer, StyledForm, Error } from "./styled";
 
 export const Form = () => {
-  const [selectedValue, setSelectValue] = useState(initValue);
-  const [result, setResult] = useState(null);
-  const [error, setError] = useState("");
+  const {
+    selectedValue,
+    handleChange,
+    handleSubmit,
+    result,
+    error,
+    isShown,
+    errorMessage,
+    currencyData,
+  } = useFormLogic();
 
-  const handleChange = (name, value) => {
-    setError("");
-    setSelectValue((prevSelect) => ({ ...prevSelect, [name]: value }));
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const currentedValue = countCurrencyValue(rates, selectedValue);
-    typeof currentedValue === "string"
-      ? setError(currentedValue)
-      : setResult(currentedValue);
-  };
-
-  return (
+  return errorMessage ? (
+    <Error>{errorMessage}</Error>
+  ) : (
     <StyledForm onSubmit={handleSubmit}>
       <ConvertValue
         onSelectValue={handleChange}
         nameDirection="toCurrency"
         value={selectedValue.toCurrency}
+        currencyData={currencyData}
       />
-      <FormSpacer aria-hidden="true"></FormSpacer>
+      <Spacer aria-hidden="true" />
       <InputValue value={selectedValue.value} onInputValue={handleChange} />
-      <FormSpacer aria-hidden="true"></FormSpacer>
-      <RenderValue error={error} resultValue={result} />
-      <FormButton type="submit">Convert</FormButton>
+      <Spacer aria-hidden="true" />
+      <RenderValue
+        error={error}
+        resultValue={result}
+        currencyData={currencyData}
+        selectedValue={selectedValue}
+        isShown={isShown}
+      />
+      <Button type="submit">Convert</Button>
+      <Clock date={currencyData.data} isExchange={true} />
     </StyledForm>
   );
 };

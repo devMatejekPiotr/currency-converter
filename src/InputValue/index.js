@@ -1,8 +1,8 @@
-import { Input, InputContainer } from "./Styled";
+import { Input, Container } from "./styled";
 
 export const InputValue = ({ onInputValue, value }) => {
   return (
-    <InputContainer>
+    <Container>
       <Input
         id="convertValue"
         type="number"
@@ -11,8 +11,8 @@ export const InputValue = ({ onInputValue, value }) => {
         value={value}
         min="0"
         step="any"
-        placeholder="Enter value"
+        placeholder="Enter the amount in PLN"
       />
-    </InputContainer>
+    </Container>
   );
 };
