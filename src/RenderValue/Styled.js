@@ -7,7 +7,8 @@ export const Result = styled.p`
 `;
 
 export const Error = styled.p`
-  color: red;
+  color: ${({ theme }) => theme.colors.clock};
+  font-weight: 600;
 `;
 
 export const Container = styled.div`

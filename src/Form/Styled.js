@@ -12,7 +12,7 @@ export const Spacer = styled.div`
 `;
 
 export const Error = styled.p`
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
 `;
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Legend = styled.legend`
-  color: var(--color-text);
+  color: ${({ theme }) => theme.colors.text};
   background: linear-gradient(
     to left,
     rgba(0, 0, 0, 0.6),
