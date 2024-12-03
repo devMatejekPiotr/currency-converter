@@ -7,8 +7,7 @@ export const StyledContainer = styled.fieldset`
     rgba(0, 0, 0, 0.6),
     rgba(70, 70, 70, 0.6)
   );
-  min-height: 75vh;
-  max-height: 400px;
+  max-height: 500px;
   width: 70vw;
   max-width: 300px;
   border-radius: 15px;
