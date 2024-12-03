@@ -19,6 +19,8 @@ export const useFormLogic = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(currencyData);
+    console.log(selectedValue);
     const currentedValue = countCurrencyValue(
       currencyData.rates,
       selectedValue
