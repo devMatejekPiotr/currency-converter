@@ -13,6 +13,7 @@ Currency Converter is a simple and user-friendly tool that allows users to conve
    <div style="background-color: #264de4; color: #fff; padding: 7px; border-radius: 5px; font-weight: bold;">CSS3</div>
    <div style="background-color: #f0db4f; color: #000; padding: 7px; border-radius: 5px; font-weight: bold;">JavaScript</div>
    <div style="background-color: #61dafb; color: #000; padding: 7px; border-radius: 5px; font-weight: bold;">React</div>
+   <div style="background-color: #264de4; color: #fff; padding: 7px; border-radius: 5px; font-weight: bold;">Styled Components</div>
 </div>
 
 ## Features
