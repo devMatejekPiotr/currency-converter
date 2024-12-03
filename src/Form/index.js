@@ -2,10 +2,10 @@ import { useState } from "react";
 import { ConvertValue } from "../ConvertValue/ConvertValue";
 import { InputValue } from "../InputValue/InputValue";
 import { RenderValue } from "../RenderValue";
-import "./style.css";
 import { countCurrencyValue } from "../utils/countCaurencyValue";
 import { initValue } from "../utils/mockInitValue";
 import { rates } from "../exampleRates";
+import { FormButton, FormSpacer, StyledForm } from "./Styled";
 
 export const Form = () => {
   const [selectedValue, setSelectValue] = useState(initValue);
@@ -27,26 +27,17 @@ export const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form">
-      <ConvertValue
-        onSelectValue={handleChange}
-        nameDirection="fromCurrency"
-        value={selectedValue.fromCurrency}
-        title="Convert from:"
-      />
+    <StyledForm onSubmit={handleSubmit}>
       <ConvertValue
         onSelectValue={handleChange}
         nameDirection="toCurrency"
         value={selectedValue.toCurrency}
-        title="Convert to:"
       />
-      <div className="form__spacer" aria-hidden="true"></div>
+      <FormSpacer aria-hidden="true"></FormSpacer>
       <InputValue value={selectedValue.value} onInputValue={handleChange} />
-      <div className="form__spacer" aria-hidden="true"></div>
+      <FormSpacer aria-hidden="true"></FormSpacer>
       <RenderValue error={error} resultValue={result} />
-      <button className="form__button" type="submit">
-        Convert
-      </button>
-    </form>
+      <FormButton type="submit">Convert</FormButton>
+    </StyledForm>
   );
 };

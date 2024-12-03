@@ -1,9 +1,5 @@
-import "./style.css";
+import { Result } from "./Styled";
 
 export const RenderValue = ({ resultValue, error }) => {
-  return (
-    <p className="form__equalRender" aria-live="polite">
-      {error || resultValue}
-    </p>
-  );
+  return <Result>{error || resultValue}</Result>;
 };

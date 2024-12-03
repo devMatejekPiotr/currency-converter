@@ -1,29 +1,20 @@
-import "./style.css";
+import { LabelSelect, Select } from "./Styled";
 
-export const ConvertValue = ({
-  title,
-  value,
-  nameDirection,
-  onSelectValue,
-}) => {
+export const ConvertValue = ({ value, nameDirection, onSelectValue }) => {
   return (
     <div>
-      <p className="form__paragraf">{title}</p>
-      <label className="form__label" htmlFor={nameDirection}>
-        Choose currency
-      </label>
-      <select
+      <LabelSelect htmlFor={nameDirection}>Choose currency</LabelSelect>
+      <Select
         onChange={(e) => onSelectValue(e.target.name, e.target.value)}
         id={nameDirection}
         name={nameDirection}
-        className="form__select"
         value={value}
       >
         <option>PL</option>
         <option>EUR</option>
         <option>USD</option>
         <option>CNY</option>
-      </select>
+      </Select>
     </div>
   );
 };

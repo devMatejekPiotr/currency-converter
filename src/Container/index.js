@@ -1,5 +1,5 @@
-import "./style.css";
+import { StyledContainer } from "./Styled";
 
 export const Container = ({ children }) => {
-  return <fieldset className="container">{children}</fieldset>;
+  return <StyledContainer>{children}</StyledContainer>;
 };

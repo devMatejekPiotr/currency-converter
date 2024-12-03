@@ -1,10 +1,9 @@
-import "./style.css";
+import { Input, InputContainer } from "./Styled";
 
 export const InputValue = ({ onInputValue, value }) => {
   return (
-    <div className="form__valueNumber">
-      <input
-        className="form__inputNumber"
+    <InputContainer>
+      <Input
         id="convertValue"
         type="number"
         name="value"
@@ -14,6 +13,6 @@ export const InputValue = ({ onInputValue, value }) => {
         step="any"
         placeholder="Enter value"
       />
-    </div>
+    </InputContainer>
   );
 };
