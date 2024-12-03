@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/currency-converter/static/css/main.0bf772b4.css",
-    "main.js": "/currency-converter/static/js/main.338aa3fd.js",
+    "main.js": "/currency-converter/static/js/main.b18916af.js",
     "static/media/DALLE2_1.webp": "/currency-converter/static/media/DALLE2_1.1a67e57c030031bda9b5.webp",
     "index.html": "/currency-converter/index.html",
     "main.0bf772b4.css.map": "/currency-converter/static/css/main.0bf772b4.css.map",
-    "main.338aa3fd.js.map": "/currency-converter/static/js/main.338aa3fd.js.map"
+    "main.b18916af.js.map": "/currency-converter/static/js/main.b18916af.js.map"
   },
   "entrypoints": [
     "static/css/main.0bf772b4.css",
-    "static/js/main.338aa3fd.js"
+    "static/js/main.b18916af.js"
   ]
 }
